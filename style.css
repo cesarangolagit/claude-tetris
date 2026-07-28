@@ -73,6 +73,21 @@ body {
   letter-spacing: 1px;
 }
 
+#skin-select {
+  background: #1a1a25;
+  color: #e0e0e0;
+  border: 1px solid #2a2a3a;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#skin-select:focus {
+  outline: 1px solid #7aa2f7;
+}
+
 #next-canvas {
   display: block;
   border: 1px solid #2a2a3a;
