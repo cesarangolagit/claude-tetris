@@ -58,7 +58,69 @@
       <div class="overlay-box">
         <p id="overlay-title">GAME OVER</p>
         <p id="overlay-score"></p>
+        <div id="save-score-section" class="hidden">
+          <input type="text" id="player-name" placeholder="Nombre" maxlength="12" />
+          <button id="save-score-btn">Guardar</button>
+        </div>
+        <div class="highscore-panel">
+          <span class="label">Mejores puntuaciones</span>
+          <table id="gameover-highscore-table" class="highscore-table"></table>
+        </div>
         <button id="restart-btn">Reiniciar</button>
+        <button id="reset-scores-gameover-btn" class="link-btn">Resetear puntuaciones</button>
+      </div>
+    </div>
+
+    <div id="start-overlay" class="overlay">
+      <div class="overlay-box">
+        <p id="start-title">TETRIS</p>
+        <div class="highscore-panel">
+          <span class="label">Mejores puntuaciones</span>
+          <table id="start-highscore-table" class="highscore-table"></table>
+        </div>
+        <button id="play-btn">Jugar</button>
+        <button id="reset-scores-start-btn" class="link-btn">Resetear puntuaciones</button>
+      </div>
+    </div>
+
+    <div id="pause-menu" class="overlay hidden">
+      <div class="overlay-box pause-box">
+        <p id="pause-title">PAUSA</p>
+
+        <div class="pause-actions">
+          <button id="resume-btn">Reanudar</button>
+          <button id="pause-restart-btn">Reiniciar</button>
+          <button id="controls-btn">Ver controles</button>
+        </div>
+
+        <div class="pause-level">
+          <label for="start-level">Nivel inicial</label>
+          <select id="start-level">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
+        </div>
+
+        <ul id="pause-controls" class="controls-list hidden">
+          <li><kbd>←</kbd><kbd>→</kbd> mover</li>
+          <li><kbd>↑</kbd> rotar</li>
+          <li><kbd>↓</kbd> bajar</li>
+          <li><kbd>Space</kbd> caída</li>
+          <li><kbd>P</kbd> / <kbd>Esc</kbd> pausa</li>
+        </ul>
       </div>
     </div>
   </div>
